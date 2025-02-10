@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset padding and margins */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Style for the scrollable background */
+        .scrollable-background {
+            height: auto; /* Set a height larger than the viewport to enable scrolling */
+            background-image: url('bg2.png'); /* Add a background image */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; /* Center and scale the image */
+            background-attachment: scroll; /* Allow the background to scroll with the content */
+        }
+
+        .nav {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            position:sticky;
+ top:0px;
+        }
+
+        .nav a {
+            padding: 10px 30px;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: pink;
+            transform: scale(1.2);
+        }
+
+        .LOGO {
+            display: flex; /* Align items horizontally */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            margin-top: 50px; /* Add some space from the top */
+        }
+
+        .logopic {
+            height: 400px; 
+            width: 400px; 
+            border-radius: 50%; /* Make it circular */
+        }
+
+        .insidebody {
+            display: flex; /* Align text vertically */
+            flex-direction: column; /* Stack items vertically */
+            justify-content:flex-start; /* Center vertically within container */
+            align-items: center; /* Center horizontally within container */
+            margin-left: 20px; /* Add some space between image and text */
+        }
+
+        .insidebody h1 {
+            font-size: 7rem; /* Adjust font size for "VASSIST" */
+            margin-bottom: 5px; /* Add space below H1 */
+        }
+
+        .insidebody h2 {
+            font-size: 3rem; /* Adjust font size for "we + assist" */
+            font-weight: normal;
+            font-family: "Courgette", serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+
+        .tripic{
+            float:right;
+        }
+        
+        .mainbody{
+            margin-top:250px;
+        }
+        
+        .mainbody p{
+            margin:30px;
+            font-family:"Courgette", serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size:4em;
+            
+        }
+        A{
+            text-decoration: none;
+        }
+
+        button {
+            display:block;
+            margin:40px;
+            padding:15px 30px;
+            font-size:1.5rem;
+            color:white;
+            background-color:#010000; /* Red button color */
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            transition:.3s ease-in-out all;
+        }
+        
+        button:hover {
+           background-color:#4c3833; /* Darker red on hover */
+           transform: scale(1.1);   /* Slight zoom effect on hover */
+       }
+       .contact{
+        padding:20px;
+        background-color: black; 
+        color:white;
+        text-align:center;
+
+    }
+    .about {
+        margin-top:200px;
+        display: flex; /* Aligns items horizontally */
+        align-items: flex-start; /* Aligns content to the top */
+       /* gap: 20px; /* Adds space between image and text */
+        padding: 20px;
+        /* Background color for the section */
+    }
+    
+    
+    
+    .abtpara h1 {
+        font-size: 5rem;
+        margin-bottom: 10px; /* Adds space below heading */
+        font-family: "Caveat", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+    }
+    
+    .abtpara p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        font-family:verdana;
+    }
+    .cent{
+
+        width: 75%;
+        margin:5px;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        margin-bottom: 100px;
+       
+        }
+        .box h3{
+            color:white;
+
+        }
+       
+        .res{
+            margin-top:200px;
+            font-size:5em;
+            
+            font-family: "Caveat", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+        }
+        .box{
+        flex:3;
+        background-color:black;
+        margin:10px;
+        width:auto;
+        border-radius:25px;
+        padding:30px;
+        transition: transform 0.3s ease;
+        }
+        .box h3{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .box:hover{
+            background-color:#310606;
+            transform: scale(1.1);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-background">
+        <!-- Navigation Bar -->
+        <div class="nav">
+            <a href="https://vassist-mu.vercel.app/materials">MATERIALS</a>
+            <a href="https://vassist-mu.vercel.app/pyq">PYQ</a>
+            <a href="https://vassist-mu.vercel.app/forum">FORUM</a>
+        </div>
+
+        <!-- Logo Section -->
+        <div class="LOGO">
+           <!-- Circular Logo Image -->
+           <img class="logopic" src="logo.jpg" alt="Logo">
+
+           <!-- Text Inside Logo -->
+           <div class="insidebody">
+               <h1>VASSIST</h1>
+               <h2>we + assist</h2>
+           </div>
+       </div>
+
+       <!-- Main Body Section -->
+       <div class="mainbody">
+           <img class="tripic" src="tri.png">
+           <p>Empowering VIT Chennai Students with Seamless Access to PYQs and Study Materials</p>
+
+           <!-- Button -->
+          
+           <button id="redirectButton">GO TO SITE</button>
+        
+       </div>
+       <div class="about">
+        <img class="ltripic" src="triangle-removebg-preview (1).png">
+        <div class="abtpara">
+        <h1 >ABOUT US!</h1>
+        <p>We are a team of passionate students from VIT Chennai, committed to making academic resources more accessible and convenient. Understanding the challenges students face in finding study materials and past question papers, we created VASSIST to simplify the learning experience. Our mission is to empower fellow students by providing seamless access to resources that enhance academic success and foster a collaborative learning environment</p>
+    </div>
+       </div>
+
+<center>
+    <h1 class="res">Resources</h1>
+       <div class="cent">
+        <A HREF="https://vassist-mu.vercel.app/materials">
+        <div class="box">
+            <img src="wbooks.png">
+            <h3>materials</h3>
+            </div>
+        </A>
+        <A HREF="https://vassist-mu.vercel.app/pyq">
+            <div class="box">
+            <img src="wpage.png">
+            <h3>PYQs</h3>
+            </div>
+        </A>
+
+        <A HREF="https://vassist-mu.vercel.app/forum">
+            
+            <div class="box">
+            <img src="wforum.png">
+            <h3>forum</h3>
+            </div>
+        </A>
+
+       </div>
+    </center>
+       
+       
+       
+       <div class="contact">
+        <h4 STYLE="FONT-FAMILY:verdana; color:grey">CONTACT US!</h4>
+        <P STYLE="FONT-FAMILY:verdana; color:grey">vassist.vit@gmail.com</P>
+        <hr style="color:gray; margin:10px">
+        <P style="margin-top:20px; color:grey; font-size:12px;">© 2025 VASSIST. All rights reserved.</P>
+
+    </div>
+   </div>
+   
+   
+
+   <!-- JavaScript for Button Redirection -->
+   <script>
+       document.getElementById('redirectButton').addEventListener('click', function() {
+           window.location.href = 'https://vassist-mu.vercel.app/materials';
+       });
+   </script>
+</body>
+</html>
